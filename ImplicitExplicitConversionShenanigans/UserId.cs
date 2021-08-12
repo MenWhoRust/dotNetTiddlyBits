@@ -14,6 +14,8 @@ namespace ImplicitExplicitConversionShenanigans
 
         // You can define implicit and explicit conversions
         // between objects
+        // if you declare an implicit operator
+        // it will also support the explicit 
         public static implicit operator UserId(Guid guid)
         {
             return new UserId(guid);
